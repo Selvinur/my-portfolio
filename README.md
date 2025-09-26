@@ -1,9 +1,9 @@
-# Personal Blog
+# Kişisel Blog  
 
 **Proje Tanımı:** Bu proje, kişisel blog olarak geliştirilmiştir. 🙋‍♀️ Hakkımda bilgi alabilir, 📄 özgeçmişimi inceleyebilir, 🎨 hobilerimi görebilir ve ✉️ benimle iletişime geçebilirsiniz
 Amacım, yazılım alanındaki çalışmalarımı, hobilerimi ve kişisel gelişim sürecimi paylaşmak. ✨🚀
 
-**Proje Kategorisi:** Kişisel Blog  
+**Canlı Demo:** https://my-portfolio-eosin-eight-28.vercel.app/
 
 **Uygulama Özellikleri:**  
 - 🏠 Anasayfa
@@ -15,7 +15,7 @@ Amacım, yazılım alanındaki çalışmalarımı, hobilerimi ve kişisel geliş
 **Teknik Özellikler:**  
 - Basit navigation bar  
 - Responsive tasarım  
-- Footer içinde copyright ve iletişim bilgileri  
+- Footer içinde copyright
 
 **Oluşturan:** Selvinur DUMAN  
 
