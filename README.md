@@ -6,9 +6,9 @@ Amacım, yazılım alanındaki çalışmalarımı, hobilerimi ve kişisel geliş
 **Proje Kategorisi:** Kişisel Blog  
 
 **Uygulama Özellikleri:**  
-- 🏠 Anasayfa  
+- 🏠 Anasayfa
+- ✨ Hakkımda 
 - 📄 Özgeçmişim  
-- 👥 Yazılım ve Siber Güvenlik  
 - 🎨 Hobilerim  
 - ✉️ İletişim  
 
