@@ -1,6 +1,6 @@
 // navbar.html ve footer.html dosyalarını yükler
 document.addEventListener("DOMContentLoaded", () => {
-  // Navbar ekle
+  
   fetch("navbar.html")
     .then(res => res.text())
     .then(data => {
@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(err => console.error("Navbar yüklenemedi:", err));
 
-  // Footer ekle
   fetch("footer.html")
     .then(res => res.text())
     .then(data => {

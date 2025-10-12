@@ -1,20 +1,29 @@
 :root {
-  --bg:#fff2f597;
-  --fg:#1f2937;
-  --muted:#6b7280;
-  --brand:#ffb3cc;
-  --card:#ffffff;
+  --bg: #fff2f597;
+  --fg: #1f2937;
+  --muted: #6b7280;
+  --brand: #ffb3cc;
+  --card: #ffffff;
 }
 
-*{box-sizing:border-box}
+/* GENEL */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* yatay kaymayı engeller */
+}
 
 body {
-  margin:0;
-  font-family:Segoe UI,Roboto,Arial;
-  background:var(--bg);
-  color:var(--fg);
-  line-height:1.6;
-  padding-bottom:60px; /* footer için boşluk */
+  font-family: Segoe UI, Roboto, Arial;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  padding-bottom: 60px; /* footer için boşluk */
 }
 
 /* NAVBAR */
@@ -24,29 +33,43 @@ body {
   z-index: 50;
   background: var(--brand);
   border-bottom: 1px solid #e5e7eb;
+  width: 100%;
 }
+
 .nav-inner {
   max-width: 1100px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 16px;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 .brand {
   font-weight: 700;
   color: #fff;
+  font-size: 1.1rem;
+  text-align: left;
 }
+
 .menu {
   display: flex;
+  flex-wrap: wrap;
   gap: 14px;
+  justify-content: flex-end;
 }
+
 .menu a {
   padding: 10px 12px;
   border-radius: 8px;
   color: #fff;
   font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
+
 .menu a:hover {
   background: #fff;
   color: var(--fg);
@@ -59,10 +82,17 @@ body {
   padding: 24px 16px;
   text-align: center;
 }
+
+.hero img {
+  width: 200px;
+  border-radius: 10%;
+}
+
 .title {
   font-size: 36px;
   margin-bottom: 8px;
 }
+
 .lead {
   color: var(--muted);
 }
@@ -73,15 +103,18 @@ section {
   margin: 32px auto;
   padding: 0 16px;
 }
+
 .section-title {
   font-size: 24px;
   margin-bottom: 12px;
 }
+
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
+
 .card {
   background: var(--card);
   border: 1px solid #e5e7eb;
@@ -99,4 +132,50 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+/* 📱 MOBİL DÜZENLEME */
+@media (max-width: 768px) {
+  .nav-inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .brand {
+    margin-bottom: 6px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .menu a {
+    display: inline-block;
+    margin: 4px 6px;
+    padding: 8px 10px;
+    font-size: 0.95rem;
+  }
+
+  .hero img {
+    width: 160px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    position: static; /* mobilde sabit footer taşma yapmasın */
+    margin-top: 20px;
+  }
 }
