@@ -3,7 +3,7 @@
 **Proje Tanımı:** Bu proje, kişisel blog olarak geliştirilmiştir. 🙋‍♀️ Hakkımda bilgi alabilir, 📄 özgeçmişimi inceleyebilir, 🎨 hobilerimi görebilir ve ✉️ benimle iletişime geçebilirsiniz
 Amacım, yazılım alanındaki çalışmalarımı, hobilerimi ve kişisel gelişim sürecimi paylaşmak. ✨🚀
 
-**Canlı Demo:** https://my-portfolio-eosin-eight-28.vercel.app/
+**Canlı Demo:** https://www.selvinurduman.com/
 
 **Uygulama Özellikleri:**  
 - 🏠 Anasayfa
