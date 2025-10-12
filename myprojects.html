@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>💻 Projelerim - Selvinur DUMAN</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .project {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+      background: var(--card);
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .project img, .project video {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+
+    /* özel kutu: şu anda üzerinde çalışılan proje */
+    .current-project {
+      border: 2px solid var(--brand);
+      background: #fff0f6;
+      padding: 24px;
+      border-radius: 16px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 8px rgba(255, 182, 193, 0.3);
+    }
+
+    .current-project h2 {
+      color: var(--brand);
+      margin-top: 0;
+    }
+
+    @media (max-width: 768px) {
+      .project {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <main>
+    <h2 class="section-title">🚀 Projelerim</h2>
+
+    <!-- 🔥 Üzerinde Çalıştığım Proje -->
+    <section class="current-project">
+      <h2>✨ Şu Anda Üzerinde Çalıştığım Proje</h2>
+      <h3>🧠 Yapay Zekâ Destekli Öğrenme Asistanı (Yanlıştan Öğrenme Modeli)</h3>
+      <p>
+  Şu anda üzerinde çalıştığım proje, ortaokul öğrencilerinin yapay zekâyı kullanırken 
+  doğrudan cevabı almak yerine düşünme ve problem çözme becerilerini geliştirmelerini 
+  hedefleyen bir mobil prototip. Uygulama, öğrencinin yanlış yaptığı sorularda kısa 
+  ipuçları vererek hatadan öğrenmeyi teşvik ediyor. Başlangıçta sade bir soru bankası 
+  ve chatbot etkileşimiyle ilerliyorum, ilerleyen aşamalarda kişiselleştirilmiş tekrar 
+  takvimi gibi özellikler eklemeyi planlıyorum.
+</p>
+
+      <p><i>Bu proje şu anda geliştirme aşamasında 💻</i></p>
+    </section>
+
+    <!-- Arduino Çizgi İzleyen -->
+    <div class="project">
+      <div>
+        <h3>🤖 Bluetooth Kontrollü Engel Algılayan & Çizgi İzleyen Araç</h3>
+        <p>Mikroişlemci tabanlı denetleyiciler dersinde geliştirdiğim bu projede Arduino Uno kullandım.  
+        Aracım hem çizgi izleyebilmekte hem de Bluetooth üzerinden manuel olarak kontrol edilebilmektedir.  
+        Sensörleri sayesinde engellerden kaçabilmektedir.</p>
+      </div>
+      <div>
+        <video width="100%" height="350" controls 
+          style="margin-top:12px; border-radius:12px; border:8px solid #fff; box-shadow:0 0 8px rgba(0,0,0,0.1);">
+          <source src="images/araba_video1.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+        <video width="100%" height="350" controls 
+          style="margin-top:12px; border-radius:12px; border:8px solid #fff; box-shadow:0 0 8px rgba(0,0,0,0.1);">
+          <source src="images/araba_video2.mp4" type="video/mp4">
+          Tarayıcınız bu videoyu desteklemiyor.
+        </video>
+        <img src="images/görsel araba.jpg" alt="Arduino Projesi" style="margin-top:12px;">
+      </div>
+    </div>
+
+    <!-- Flutter UI -->
+    <div class="project">
+      <div>
+        <h3>📱 Flutter Arayüz Tasarımı</h3>
+        <p>TechCareer’in <b>Flutter Builder Bootcamp</b> programı kapsamında Flutter’da arayüz tasarımı ve state management konularında projeler geliştirdim.  
+        Bu projede mobil uygulama arayüzlerini modern tasarım ilkelerine göre kodladım.</p>
+      </div>
+      <div>
+        <img src="images/flutter_ui.jpg" alt="Flutter Arayüzü">
+      </div>
+    </div>
+
+    <!-- Amazon Klonu -->
+    <div class="project">
+      <div>
+        <h3>🛍️ Amazon Klonu (Frontend)</h3>
+        <p>Bu projede HTML, CSS ve JavaScript kullanarak Amazon benzeri bir e-ticaret arayüzü tasarladım.  
+        Sayfada ürün listeleme, sepete ekleme ve responsive tasarım gibi özellikler yer almaktadır.</p>
+        <p><a href="https://www.youtube.com/watch?v=xInHw_d-uV8&t=27s" target="_blank">🎥 Proje videosunu YouTube'da izle</a></p>
+      </div>
+      <div>
+        <img src="images/amazon_clone.png" alt="Amazon Klonu">
+      </div>
+    </div>
+
+    <!-- FÜZE Girişimcilik Projesi -->
+    <div class="project">
+      <div>
+        <h3>🚀 FÜZE - Yapay Zeka Girişimcilik Programı</h3>
+        <p>SDÜ ve TÜBİTAK iş birliğiyle düzenlenen <b>Fikirden Ürüne Yapay Zeka Girişimcilik Programı (FÜZE)</b> kapsamında ekibimle birlikte yapay zeka tabanlı bir girişim projesi geliştirdik.  
+        Bu süreçte iş modeli geliştirme, sunum hazırlama ve ekip çalışması becerilerimi güçlendirdim.</p>
+      </div>
+      <div>
+        <img src="images/füze1.jpg" alt="FÜZE Ekibi" style="margin-bottom:12px;">
+        <img src="images/füze2.jpg" alt="Proje Ekibi">
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script src="include.js"></script>
+</body>
+</html>

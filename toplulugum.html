@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>👥 Topluluğum - Selvinur DUMAN</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .intro {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      align-items: center;
+      background: #fff0f6;
+      border: 2px solid var(--brand);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 40px;
+      gap: 20px;
+      box-shadow: 0 0 8px rgba(255, 182, 193, 0.3);
+    }
+
+    .intro h2 {
+      color: var(--brand);
+      margin-top: 0;
+    }
+
+    .intro img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      max-width: 280px;
+      justify-self: center;
+    }
+
+    .activity {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+      background: var(--card);
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .activity img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    /* 🎯 Fotoğraf boyutlarını küçült */
+    .activity.small-images img {
+      max-width: 180px;
+      margin: 8px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .activity .img-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+
+    /* iletişim alanı */
+    .contact {
+      text-align: center;
+      background: var(--brand);
+      color: #fff;
+      padding: 24px;
+      border-radius: 14px;
+      margin-top: 40px;
+    }
+
+    .contact a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 10px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .intro {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .intro img {
+        max-width: 200px;
+        margin: 0 auto;
+      }
+
+      .activity {
+        grid-template-columns: 1fr;
+      }
+
+      .activity.small-images img {
+        max-width: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <main>
+    <h2 class="section-title">💡 Topluluğum</h2>
+
+    <!-- 🌸 Topluluk Tanıtımı -->
+    <section class="intro">
+      <div>
+        <h2>SDÜ Yazılım ve Siber Güvenlik Topluluğu</h2>
+        <p>
+          Temel amacımız bireylere siber güvenlik konusunda farkındalık oluşturarak,
+          çağımızın en önemli ve dikkat edilmesi gereken güvenlik sorununu ortadan kaldırmak
+          ve toplumu bilinçlendirmektir. Gerekli teknik ve teorik eğitimlerin verilmesiyle
+          siber güvenlik altyapısını benimsemiş bireyleri yetiştirmektir.  
+          Dönem içerisinde topluluk odamızda yazılım dersleri, konferanslar, kariyer günleri, teknik geziler gibi
+          etkinlikler yapan aktif bir topluluğuz.
+        </p>
+      </div>
+      <img src="images/afis.jpg" alt="Topluluk Fotoğrafı">
+    </section>
+
+    <div class="activity">
+      <div>
+        <h3>🔐 Siber Güvenlik Zirvesi</h3>
+        <p>e-safe tarafından düzenlenen bu etkinlikte alanında uzman konuşmacılar, siber tehditler ve kariyer fırsatları hakkında bilgi paylaşıldı. Ctf düzenlendi, yarışmada bir üyemiz 3. oldu.</p>
+      </div>
+      <div>
+        <img src="images/afis1.jpg" alt="Siber Güvenlik Zirvesi Afişi">
+      </div>
+    </div>
+
+    <div class="activity">
+      <div>
+        <h3>💻 Yazılım Dersleri</h3>
+        <p>Dönem boyunca süren web, programlamaya giriş ve algoritmalar gibi dersler topluluk odamızda maksimum 20 kişilik ekiplerle verilerek üyelerimizin en kaliteli ve etkin şekilde öğrenmeleri amaçlandı.</p>
+      </div>
+      <div>
+        <img src="images/afis2.jpg" alt="Yazılım Dersleri Afişi">
+      </div>
+    </div>
+
+    <!-- 🎯 Küçültülmüş: Kariyer Günleri -->
+    <div class="activity small-images">
+      <div>
+        <h3>🚀 Kariyer Günleri</h3>
+        <p>Alanında uzman SDÜ mezunları öğrencilerle buluştu ve deneyimlerini paylaştı.</p>
+      </div>
+      <div class="img-grid">
+        <img src="images/afis3.jpg" alt="Kariyer Günleri Afişi">
+        <img src="images/afis4.jpg" alt="Kariyer Günleri Afişi">
+        <img src="images/afis5.jpg" alt="Kariyer Günleri Afişi">
+      </div>
+    </div>
+
+    <!-- 🎯 Küçültülmüş: Diğer Etkinlikler -->
+    <div class="activity small-images">
+      <div>
+        <h3>📌 Diğer Etkinliklerimiz</h3>
+      </div>
+      <div class="img-grid">
+        <img src="images/afis6.jpg" alt="Etkinlik">
+        <img src="images/afis8.png" alt="Etkinlik">
+        <img src="images/afis9.png" alt="Etkinlik">
+        <img src="images/afis10.png" alt="Etkinlik">
+      </div>
+    </div>
+
+    <!-- İLETİŞİM -->
+    <div class="contact">
+      <h3>📞 Topluluk İletişimi</h3>
+      <p>Bizi sosyal medya üzerinden takip edebilirsin:</p>
+      <p>
+        <a href="https://www.instagram.com/sduyzlm/" target="_blank">📸 Instagram</a> |
+        <a href="https://www.linkedin.com/company/sduyazılım" target="_blank">💼 LinkedIn</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script src="include.js"></script>
+</body>
+</html>
