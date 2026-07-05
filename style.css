@@ -47,7 +47,7 @@ body {
 
 .brand {
   font-weight: 700;
-  color: #fff;
+  color: #521c2e;
   font-size: 1.1rem;
 }
 
@@ -56,22 +56,24 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+  align-items: center;
   justify-content: flex-end;
 }
 
 .menu a {
-  padding: 8px 10px;
+  padding: 8px 12px;
   border-radius: 8px;
-  color: #fff;
-  font-weight: 500;
+  color: #521c2e; /* Kontrast oranı yüksek koyu bordo */
+  font-weight: 600;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
-.menu a:hover {
+.menu a:hover, .menu a.active {
   background: #fff;
-  color: var(--fg);
+  color: #521c2e;
 }
+
 
 /* HERO */
 .hero {
@@ -139,14 +141,12 @@ footer {
     display: none;
   }
 
-  /* Menü iki satıra ayrılsın */
+  /* Menü mobilde satırlara sığacak şekilde dizilsin */
   .menu {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-    gap: 6px 10px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 8px 10px;
     width: 100%;
     padding: 6px 0;
   }
@@ -154,7 +154,7 @@ footer {
   .menu a {
     font-size: 13px;
     font-weight: 500;
-    padding: 6px 0;
+    padding: 6px 10px;
     margin: 0;
   }
 

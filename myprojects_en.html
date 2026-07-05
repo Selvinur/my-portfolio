@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>💻 My Projects - Selvinur DUMAN</title>
+  <meta name="description" content="Selvinur DUMAN - Projects portfolio including AI learning assistant, Bluetooth autonomous car, Flutter UI, and Amazon clone." />
+  <link rel="icon" type="image/png" href="images/zemu.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .project {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+      background: var(--card);
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .project img, .project video {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+
+    /* special box: currently active project */
+    .current-project {
+      border: 2px solid var(--brand);
+      background: #fff0f6;
+      padding: 24px;
+      border-radius: 16px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 8px rgba(255, 182, 193, 0.3);
+    }
+
+    .current-project h2 {
+      color: var(--brand);
+      margin-top: 0;
+    }
+
+    @media (max-width: 768px) {
+      .project {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <main>
+    <h2 class="section-title">🚀 My Projects</h2>
+
+    <section class="current-project">
+      <h2>✨ Current Project I'm Working On</h2>
+      <h3>🧠 Zemu - RAG-Based AI Education Assistant</h3>
+      <p>
+        Zemu is an innovative web platform supported by <strong>RAG (Retrieval-Augmented Generation)</strong>, aiming to improve middle school students' problem-solving skills. Unlike standard AI tools, it provides guided hints strictly following pedagogical rules instead of giving the answer directly, thus encouraging 'learning from mistakes'.
+      </p>
+      
+      <strong>Technical Infrastructure of the Project:</strong>
+      <ul style="margin-top: 8px; padding-left: 20px;">
+        <li><strong>Data Pipeline:</strong> A custom Python infrastructure that analyzes and digitalizes complex PDF test books using Mistral OCR, automatically detecting and repairing erroneous questions.</li>
+        <li><strong>Hybrid AI:</strong> An advanced memory system combining the fluent language processing capacity of Mistral API with local Ollama (nomic-embed-text) models.</li>
+        <li><strong>User Experience:</strong> While students solve interactive tests, they can receive real-time and context-aware guidance from the animated Zemu character floating in the corner of the page.</li>
+      </ul>
+      <p style="margin-top: 14px;">This project is actively being developed on the integration of modern web technologies and advanced artificial intelligence architectures into education. 💻</p>
+    </section>
+
+    <!-- Arduino Project -->
+    <div class="project">
+      <div>
+        <h3>🤖 Bluetooth Controlled Obstacle Detecting & Line Following Vehicle</h3>
+        <p>I used Arduino Uno in this project developed in the Microprocessor-Based Controllers course. My vehicle can follow a line and can also be controlled manually via Bluetooth. It can avoid obstacles thanks to its sensors.</p>
+      </div>
+      <div>
+        <video width="100%" height="350" controls 
+          style="margin-top:12px; border-radius:12px; border:8px solid #fff; box-shadow:0 0 8px rgba(0,0,0,0.1);">
+          <source src="images/araba_video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video width="100%" height="350" controls 
+          style="margin-top:12px; border-radius:12px; border:8px solid #fff; box-shadow:0 0 8px rgba(0,0,0,0.1);">
+          <source src="images/araba_video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <img src="images/görsel araba.jpg" alt="Arduino Project" style="margin-top:12px;">
+      </div>
+    </div>
+
+    <!-- Flutter UI -->
+    <div class="project">
+      <div>
+        <h3>📱 Flutter UI Design</h3>
+        <p>As part of TechCareer's <b>Flutter Builder Bootcamp</b> program, I developed projects on UI design and state management in Flutter. In this project, I coded mobile application interfaces according to modern design principles.</p>
+      </div>
+      <div>
+        <img src="images/flutter_ui.jpg" alt="Flutter UI Screen">
+      </div>
+    </div>
+
+    <!-- Amazon Clone -->
+    <div class="project">
+      <div>
+        <h3>🛒 Amazon Clone</h3>
+        <p>
+          In this project, I designed an Amazon-like e-commerce interface using HTML, CSS, and JavaScript. The page includes basic features such as product listing, adding to cart, and responsive design. Although the project is still under development, it has a structure very close to Amazon's website in terms of design. The backend connection is not active yet, but you can inspect the project content from the video.
+        </p>
+        <p>
+          <a href="https://www.youtube.com/watch?v=xInHwD-uV8&t=2s" target="_blank" rel="noopener noreferrer">
+            🎥 Watch the project video on YouTube
+          </a>
+        </p>
+        <p>
+          <a href="https://anazon.fyi" target="_blank" rel="noopener noreferrer">
+            🌐 Amazon Clone Web Site
+          </a>
+        </p>
+      </div>
+      <div>
+        <img src="images/amazon_clone.png" alt="Amazon Clone">
+      </div>
+    </div>
+
+    <!-- FÜZE Entrepreneurship Project -->
+    <div class="project">
+      <div>
+        <h3>🚀 FÜZE - Artificial Intelligence Entrepreneurship Program</h3>
+        <p>Within the scope of the <b>From Idea to Product AI Entrepreneurship Program (FÜZE)</b> organized in cooperation with SDÜ and TÜBİTAK, I developed an AI-based startup project with my team. During this process, I strengthened my business model development, presentation preparation, and teamwork skills.</p>
+      </div>
+      <div>
+        <img src="images/füze1.jpg" alt="FÜZE Team" style="margin-bottom:12px;">
+        <img src="images/füze2.jpg" alt="Project Team">
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script src="include.js"></script>
+</body>
+</html>
